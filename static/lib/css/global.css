@@ -3,4 +3,8 @@ html, body {
   margin: 0;
 }
 
+body {
+  display: grid;
+}
+
 /*# sourceMappingURL=global.css.map */

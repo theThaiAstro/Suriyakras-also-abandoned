@@ -1,0 +1,92 @@
+/* RATIO definition */
+/* END of RATIO definition */
+/* COLOUR definition */
+/* 
+  PANTONE Reflex Blue XGC
+  rgb(34, 22, 132 )
+  #221684 
+*/
+/* HSL definition */
+/* OTHER COLOURS definition */
+/* OLD COLOURS WAITING TO REVALUE */
+/* ACCENT COLOUR definition */
+/* END of ACCENT COLOUR definition */
+/* END of COLOUR definition */
+/* -------------------------------------- */
+/* SHADOW definition */
+/* END of SHADOW definition */
+/* -------------------------------------- */
+/* TYPEFACE definition */
+/* FONT SIZE definition */
+/* END of SIZE definition */
+/*  END of TYPEFACE definition */
+/* URIs */
+/* END of URIs */
+/*
+* {
+font-family: $font-heading;
+}
+*/
+.font-larger {
+  font-size: larger;
+}
+
+/* FONT COLOURS */
+/*
+.font-colour-black {
+	color: $tas-black;
+}
+
+.font-colour-blue {
+	color: $tas-blue;
+}
+
+.font-colour-red {
+	color: $tas-red;
+}
+
+.font-colour-white {
+	color: $tas-white;
+}
+*/
+/* END of FONT COLOURS */
+/* FONT WEIGHTS */
+.font-thin {
+  font-weight: 100;
+}
+
+.font-extra-light {
+  font-weight: 200;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semi-bold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-extra-bold {
+  font-weight: 800;
+}
+
+.font-black {
+  font-weight: 900;
+}
+
+/* END of FONT WEIGHTS */
+
+/*# sourceMappingURL=typography.css.map */

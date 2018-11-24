@@ -1,0 +1,18 @@
+@import 'master';
+
+* {
+  border: 0.2px solid #ffffff00;
+}
+
+header {
+  width: 100vw;
+  background: $tas-colour-black;
+}
+
+section {
+  // background-color: $tas-colour-super-black;
+}
+
+footer {
+  background-color: $tas-colour-dark-blue;
+}

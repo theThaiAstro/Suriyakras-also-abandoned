@@ -1,0 +1,94 @@
+@import 'functions';
+
+/* RATIO definition */
+
+$ratio: 1.618;
+
+$x1: pow($ratio, 1); 
+$x2: pow($ratio, 2);
+$x3: pow($ratio, 3);
+$x4: pow($ratio, 4);
+$x5: pow($ratio, 5);
+$x6: pow($ratio, 6);
+$x7: pow($ratio, 7);
+
+/* END of RATIO definition */
+
+/* COLOUR definition */
+
+/* 
+
+  PANTONE Reflex Blue XGC
+  rgb(34, 22, 132 )
+  #221684 
+
+*/
+
+/* HSL definition */
+
+$tas-hsl-h: 247;
+$tas-hsl-s: 71%;
+$tas-hsl-l: 30%;
+
+$tas-colour-primary: hsl($tas-hsl-h, $tas-hsl-s, $tas-hsl-l);
+
+/* OTHER COLOURS definition */
+
+$tas-colour-black: darken($tas-colour-primary, percentage($x7/100));
+$tas-colour-dark-blue: darken($tas-colour-primary, percentage($x6/100));
+
+
+/* OLD COLOURS WAITING TO REVALUE */
+$tas-colour-white: hsl($tas-hsl-h, $tas-hsl-s, 98%);
+$tas-colour-almost-white-extra: hsl($tas-hsl-h, $tas-hsl-s, 94%);
+$tas-colour-almost-white: hsl($tas-hsl-h, $tas-hsl-s, 90%); // old 92%
+$tas-colour-blue: hsl($tas-hsl-h, $tas-hsl-s, $tas-hsl-l);
+$tas-colour-bright-blue: hsl($tas-hsl-h, $tas-hsl-s, 64%); // 60% is also good
+$tas-colour-almost-black: hsl($tas-hsl-h, $tas-hsl-s, 24%); // 60% is also good
+$tas-colour-black: hsl($tas-hsl-h, $tas-hsl-s, 8%);
+$tas-colour-super-black: hsl($tas-hsl-h, $tas-hsl-s, 4%);
+$tas-colour-grey: hsl($tas-hsl-h, 8%, $tas-hsl-l);
+
+
+/* ACCENT COLOUR definition */
+$tas-red: hsl(356, 92%, 48%);
+/* END of ACCENT COLOUR definition */
+
+/* END of COLOUR definition */
+
+/* -------------------------------------- */
+
+/* SHADOW definition */
+
+$box-shadow: 0 2px 4px 0 hsla($tas-hsl-h, $tas-hsl-s, $tas-hsl-l, 0.2);
+/* END of SHADOW definition */
+
+/* -------------------------------------- */
+
+/* TYPEFACE definition */
+
+$font-noto: 'Noto Sans Thai UI',
+'Noto Sans',
+sans-serif;
+
+$font-prajad: 'Prajad', sans-serif;
+/* FONT SIZE definition */
+
+$font-thin: 100;
+$font-extra-light: 200;
+$font-light: 300;
+$font-normal: 400;
+$font-medium: 500;
+$font-semi-bold: 600;
+$font-bold: 700;
+$font-extra-bold: 800;
+$font-black: 900;
+/* END of SIZE definition */
+
+/*  END of TYPEFACE definition */
+
+/* URIs */
+
+$tas-logo-path: '../../assets/img/tas-logo-200.png';
+
+/* END of URIs */

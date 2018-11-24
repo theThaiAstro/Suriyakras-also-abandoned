@@ -1,0 +1,38 @@
+/* RATIO definition */
+/* END of RATIO definition */
+/* COLOUR definition */
+/* 
+  PANTONE Reflex Blue XGC
+  rgb(34, 22, 132 )
+  #221684 
+*/
+/* HSL definition */
+/* OTHER COLOURS definition */
+/* OLD COLOURS WAITING TO REVALUE */
+/* ACCENT COLOUR definition */
+/* END of ACCENT COLOUR definition */
+/* END of COLOUR definition */
+/* -------------------------------------- */
+/* SHADOW definition */
+/* END of SHADOW definition */
+/* -------------------------------------- */
+/* TYPEFACE definition */
+/* FONT SIZE definition */
+/* END of SIZE definition */
+/*  END of TYPEFACE definition */
+/* URIs */
+/* END of URIs */
+* {
+  border: 0.2px solid #ffffff00;
+}
+
+header {
+  width: 100vw;
+  background: #090623;
+}
+
+footer {
+  background-color: #0e0935;
+}
+
+/*# sourceMappingURL=front-page.css.map */

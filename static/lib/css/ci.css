@@ -1,0 +1,42 @@
+body {
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+
+span {
+  font-family: "Noto Sans Thai UI", "Noto Sans", Helvetica, Arial, sans-serif;
+}
+
+.x1 {
+  font-size: 1rem;
+}
+
+.x2 {
+  font-size: 1.618rem;
+}
+
+.x3 {
+  font-size: 2.617924rem;
+}
+
+.x4 {
+  font-size: 4.235801032rem;
+}
+
+.x1x {
+  font-size: 1rem;
+}
+
+.x2x {
+  font-size: 1.618rem;
+}
+
+.x3x {
+  font-size: 3.236rem;
+}
+
+.x4x {
+  font-size: 4.854rem;
+}
+
+/*# sourceMappingURL=ci.css.map */

@@ -1,0 +1,47 @@
+@import 'functions';
+
+body {
+	margin: {
+		top: 2rem;
+		left: 4rem;
+	}
+}
+
+$base-size: 1rem;
+$multiplier: 1.618;
+
+span {
+	font-family: 'Noto Sans Thai UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+}
+
+.x1 {
+	font-size: $base-size;
+}
+
+.x2 {
+	font-size: $base-size * pow($multiplier, 1);
+}
+
+.x3 {
+	font-size: $base-size * pow($multiplier, 2);
+}
+
+.x4 {
+	font-size: $base-size * pow($multiplier, 3);
+}
+
+.x1x {
+	font-size: $base-size;
+}
+
+.x2x {
+	font-size: $base-size * $multiplier;
+}
+
+.x3x {
+	font-size: $base-size * $multiplier * 2;
+}
+
+.x4x {
+	font-size: $base-size * $multiplier * 3;
+}
