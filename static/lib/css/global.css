@@ -1,10 +1,150 @@
+/* RATIO definition */
+/* END of RATIO definition */
+/* COLOUR definition */
+/* 
+
+  PANTONE Reflex Blue XGC
+  rgb(34, 22, 132 )
+  #221684 
+
+*/
+/* HSL definition */
+/* OTHER COLOURS definition */
+/* 
+
+$tas-white: hsl($tas-hsl-h, $tas-hsl-s, 98%);
+$tas-almost-white-extra: hsl($tas-hsl-h, $tas-hsl-s, 94%);
+$tas-almost-white: hsl($tas-hsl-h, $tas-hsl-s, 90%); // old 92%
+$tas-blue: hsl($tas-hsl-h, $tas-hsl-s, $tas-hsl-l);
+$tas-bright-blue: hsl($tas-hsl-h, $tas-hsl-s, 64%); // 60% is also good
+$tas-almost-black: hsl($tas-hsl-h, $tas-hsl-s, 24%); // 60% is also good
+$tas-black: hsl($tas-hsl-h, $tas-hsl-s, 8%);
+$tas-super-black: hsl($tas-hsl-h, $tas-hsl-s, 4%);  
+$tas-grey: hsl($tas-hsl-h, 8%, $tas-hsl-l);
+
+*/
+/* OLD COLOURS WAITING TO REVALUE */
+/* ACCENT COLOUR definition */
+/* END of ACCENT COLOUR definition */
+/* END of COLOUR definition */
+/* -------------------------------------- */
+/* SHADOW definition */
+/* END of SHADOW definition */
+/* -------------------------------------- */
+/* TYPEFACE definition */
+/* FONT SIZE definition */
+/* END of SIZE definition */
+/*  END of TYPEFACE definition */
+/* URIs */
+/* END of URIs */
 html, body {
   padding: 0;
   margin: 0;
+  width: 100%;
+  height: 100%;
 }
 
 body {
   display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header" "main" "footer";
+}
+
+#site-header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: 3fr 1fr;
+  grid-template-areas: "logo bar menu" "logo . .";
+}
+#site-header-logo {
+  width: 2.4rem;
+}
+#site-header-logo-wrapper {
+  grid-area: logo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #231683;
+  height: 4rem;
+  width: 4rem;
+}
+#site-header-bar {
+  background: #050311;
+  grid-area: bar;
+}
+
+#site-footer {
+  background-color: #090623;
+  font-family: "Noto Sans Thai UI", "Noto Sans", sans-serif;
+  padding: 4rem 2rem;
+}
+#site-footer-logo {
+  height: 6.8535260698rem;
+}
+#site-footer-tas-name {
+  margin-top: 0.8rem;
+}
+#site-footer-tas-name-th {
+  color: #efeefc;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+#site-footer-tas-name-en {
+  color: #dfdcf9;
+}
+#site-footer-socials {
+  margin-top: 1.2rem;
+}
+#site-footer-socials .icon {
+  height: 1.6rem;
+  width: 1.6rem;
+  fill: #efeefc;
+  margin-right: 1.2rem;
+}
+#site-footer-sitemap {
+  margin-top: 1.2rem;
+}
+#site-footer-sitemap-main-links {
+  color: #efeefc;
+  font-weight: 600;
+}
+#site-footer-sitemap-other-links {
+  color: #dfdcf9;
+  font-weight: 400;
+}
+#site-footer-sitemap a {
+  color: #efeefc;
+  text-decoration: none;
+}
+#site-footer-sitemap a:hover {
+  color: #efeefc;
+  background: #eb0a19;
+}
+#site-footer-sitemap ul {
+  padding: 0;
+}
+#site-footer-sitemap ul li {
+  display: inline-block;
+}
+#site-footer-sitemap ul li:not(:last-child)::after {
+  content: " / ";
+  font-weight: bold;
+  color: #eb0a19;
+}
+#site-footer-copyright {
+  color: #efeefc;
+  font-weight: 600;
+  word-wrap: none;
+}
+#site-footer-copyright-detail {
+  color: rgba(239, 238, 252, 0.4);
+  font-size: smaller;
+  font-weight: normal;
+  margin-top: 0.4rem;
+}
+#site-footer-copyright-detail a {
+  color: rgba(239, 238, 252, 0.4);
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=global.css.map */

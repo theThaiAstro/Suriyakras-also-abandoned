@@ -1,12 +1,13 @@
 @import 'master';
 
 * {
-  border: 0.2px solid #ffffff00;
+  // border: 0.2px solid #ffffff00;
 }
 
 header {
   width: 100vw;
-  background: $tas-colour-black;
+  background: #fafafa;
+  // background: $tas-colour-black;
 }
 
 section {
@@ -14,5 +15,4 @@ section {
 }
 
 footer {
-  background-color: $tas-colour-dark-blue;
 }

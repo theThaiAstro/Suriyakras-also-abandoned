@@ -1,8 +1,160 @@
+@import 'master';
+
+* {
+	// border: 1px inset aqua;
+}
+
 html, body {
-  padding: 0;
-  margin: 0;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
 }
 
 body {
-  display: grid;
+	display: grid;
+	grid: {
+		template-rows: auto 1fr auto;
+		template-areas:
+		'header'
+		'main'
+		'footer';
+	}
+}
+
+#site-header {
+	display: grid;
+	grid: {
+		template-columns: auto 1fr auto;
+		template-rows: 3fr 1fr;
+		template-areas: 
+			'logo bar menu'
+			'logo . .';
+	}
+
+	&-logo {
+		&-wrapper {
+			grid-area: logo;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			
+			background: {
+				color: $tas-colour-primary;
+			}
+
+			height: 4rem;
+			width: 4rem;
+		}
+		
+		width: 2.4rem;
+	}
+
+	&-bar {
+		background: $tas-colour-black;
+		grid-area: bar;
+	}
+
+}
+
+#site-footer {
+
+	background-color: $tas-colour-almost-black;
+	font-family: $font-noto;
+	padding: 4rem 2rem;
+	// @include large-and-up {
+	// 	padding: 4rem 0;
+	// }
+
+	&-logo {
+		height: ($ratio*$x3)+rem;
+	}
+
+	&-tas-name {
+		margin-top: 0.8rem;
+
+		&-th {
+			color: $tas-colour-white;
+			font: {
+				weight: $font-semi-bold;
+				size: 1.6rem;
+			}
+		}
+
+		&-en {
+			color: $tas-colour-almost-white;
+			// color: $tas-colour-white-tmp;
+		}
+	}
+
+	&-socials {
+		margin-top: 1.2rem;
+
+		.icon {
+			height: 1.6rem;
+			width: 1.6rem;
+			fill: $tas-colour-white;
+			margin-right: 1.2rem;
+		}
+	}
+
+	&-sitemap {
+		margin-top: 1.2rem;
+		
+		&-main-links {
+			color: $tas-colour-white;
+			font-weight: $font-semi-bold;
+		}
+
+		&-other-links {
+			color: $tas-colour-almost-white;
+			font-weight: $font-normal;
+		}
+
+		a {
+			color: $tas-colour-white;
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: $tas-colour-white;
+			background: $tas-colour-red;
+		}
+
+		ul {
+			padding: 0;
+
+			li {
+				display: inline-block;
+
+				&:not(:last-child)::after {
+					content: " / ";
+					font-weight: bold;
+					color: $tas-colour-red;
+				}
+			}
+		}
+	}
+
+	&-copyright {
+		color: $tas-colour-white;
+		font-weight: $font-semi-bold;
+		word-wrap: none;
+
+		&-detail {
+			color: transparentize($tas-colour-white, 0.6);
+			font: {
+				size: smaller;
+				weight: normal;
+			}
+			margin-top: 0.4rem;
+
+			a {
+				color: transparentize($tas-colour-white, 0.6);
+				text-decoration: underline;
+			}
+		}
+	}
+
 }

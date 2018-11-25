@@ -1,0 +1,20 @@
+{
+  "name": "suriyakras",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass static/lib/scss/:static/lib/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theThaiAstro/Suriyakras.git"
+  },
+  "author": "Thammarith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theThaiAstro/Suriyakras/issues"
+  },
+  "homepage": "https://github.com/theThaiAstro/Suriyakras#readme"
+}

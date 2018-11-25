@@ -4,13 +4,16 @@
 
 $ratio: 1.618;
 
-$x1: pow($ratio, 1); 
+$x1: pow($ratio, 1);
 $x2: pow($ratio, 2);
 $x3: pow($ratio, 3);
 $x4: pow($ratio, 4);
 $x5: pow($ratio, 5);
 $x6: pow($ratio, 6);
 $x7: pow($ratio, 7);
+$x8: pow($ratio, 8);
+$x9: pow($ratio, 9);
+$x10: pow($ratio, 10);
 
 /* END of RATIO definition */
 
@@ -34,24 +37,43 @@ $tas-colour-primary: hsl($tas-hsl-h, $tas-hsl-s, $tas-hsl-l);
 
 /* OTHER COLOURS definition */
 
-$tas-colour-black: darken($tas-colour-primary, percentage($x7/100));
-$tas-colour-dark-blue: darken($tas-colour-primary, percentage($x6/100));
+// $tas-colour-black: darken($tas-colour-primary, percentage($x9/100));
+// $tas-colour-dark-blue: darken($tas-colour-primary, percentage($x6/100));
+
+$tas-colour-black: hsl($tas-hsl-h, $tas-hsl-s, 4%);
+$tas-colour-almost-black: hsl($tas-hsl-h, $tas-hsl-s, 8%);
+$tas-colour-almost-white: hsl($tas-hsl-h, $tas-hsl-s, 92%);
+$tas-colour-white: hsl($tas-hsl-h, $tas-hsl-s, 96%);
+
+/* 
+
+$tas-white: hsl($tas-hsl-h, $tas-hsl-s, 98%);
+$tas-almost-white-extra: hsl($tas-hsl-h, $tas-hsl-s, 94%);
+$tas-almost-white: hsl($tas-hsl-h, $tas-hsl-s, 90%); // old 92%
+$tas-blue: hsl($tas-hsl-h, $tas-hsl-s, $tas-hsl-l);
+$tas-bright-blue: hsl($tas-hsl-h, $tas-hsl-s, 64%); // 60% is also good
+$tas-almost-black: hsl($tas-hsl-h, $tas-hsl-s, 24%); // 60% is also good
+$tas-black: hsl($tas-hsl-h, $tas-hsl-s, 8%);
+$tas-super-black: hsl($tas-hsl-h, $tas-hsl-s, 4%);  
+$tas-grey: hsl($tas-hsl-h, 8%, $tas-hsl-l);
+
+*/
 
 
 /* OLD COLOURS WAITING TO REVALUE */
-$tas-colour-white: hsl($tas-hsl-h, $tas-hsl-s, 98%);
-$tas-colour-almost-white-extra: hsl($tas-hsl-h, $tas-hsl-s, 94%);
-$tas-colour-almost-white: hsl($tas-hsl-h, $tas-hsl-s, 90%); // old 92%
-$tas-colour-blue: hsl($tas-hsl-h, $tas-hsl-s, $tas-hsl-l);
-$tas-colour-bright-blue: hsl($tas-hsl-h, $tas-hsl-s, 64%); // 60% is also good
-$tas-colour-almost-black: hsl($tas-hsl-h, $tas-hsl-s, 24%); // 60% is also good
-$tas-colour-black: hsl($tas-hsl-h, $tas-hsl-s, 8%);
-$tas-colour-super-black: hsl($tas-hsl-h, $tas-hsl-s, 4%);
-$tas-colour-grey: hsl($tas-hsl-h, 8%, $tas-hsl-l);
+// $tas-colour-white: hsl($tas-hsl-h, $tas-hsl-s, 98%);
+// $tas-colour-almost-white-extra: hsl($tas-hsl-h, $tas-hsl-s, 94%);
+// $tas-colour-almost-white: hsl($tas-hsl-h, $tas-hsl-s, 90%); // old 92%
+// $tas-colour-blue: hsl($tas-hsl-h, $tas-hsl-s, $tas-hsl-l);
+// $tas-colour-bright-blue: hsl($tas-hsl-h, $tas-hsl-s, 64%); // 60% is also good
+// $tas-colour-almost-black: hsl($tas-hsl-h, $tas-hsl-s, 24%); // 60% is also good
+// $tas-colour-black: hsl($tas-hsl-h, $tas-hsl-s, 8%);
+// $tas-colour-super-black: hsl($tas-hsl-h, $tas-hsl-s, 4%);
+// $tas-colour-grey: hsl($tas-hsl-h, 8%, $tas-hsl-l);
 
 
 /* ACCENT COLOUR definition */
-$tas-red: hsl(356, 92%, 48%);
+$tas-colour-red: hsl(356, 92%, 48%);
 /* END of ACCENT COLOUR definition */
 
 /* END of COLOUR definition */
