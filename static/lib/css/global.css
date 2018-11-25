@@ -105,19 +105,21 @@ body {
   margin-top: 1.2rem;
 }
 #site-footer-sitemap-main-links {
-  color: #efeefc;
   font-weight: 600;
 }
+#site-footer-sitemap-main-links, #site-footer-sitemap-main-links a {
+  color: #efeefc;
+}
 #site-footer-sitemap-other-links {
-  color: #dfdcf9;
   font-weight: 400;
 }
+#site-footer-sitemap-other-links, #site-footer-sitemap-other-links a {
+  color: #dfdcf9;
+}
 #site-footer-sitemap a {
-  color: #efeefc;
   text-decoration: none;
 }
 #site-footer-sitemap a:hover {
-  color: #efeefc;
   background: #eb0a19;
 }
 #site-footer-sitemap ul {

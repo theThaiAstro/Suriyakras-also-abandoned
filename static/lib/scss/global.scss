@@ -103,22 +103,24 @@ body {
 		margin-top: 1.2rem;
 		
 		&-main-links {
-			color: $tas-colour-white;
+			&, & a {
+				color: $tas-colour-white;
+			}
 			font-weight: $font-semi-bold;
 		}
-
+		
 		&-other-links {
-			color: $tas-colour-almost-white;
+			&, & a {
+				color: $tas-colour-almost-white;
+			}
 			font-weight: $font-normal;
 		}
-
+		
 		a {
-			color: $tas-colour-white;
 			text-decoration: none;
 		}
-
+		
 		a:hover {
-			color: $tas-colour-white;
 			background: $tas-colour-red;
 		}
 
