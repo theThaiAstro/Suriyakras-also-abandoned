@@ -22,7 +22,7 @@ body {
 	}
 }
 
-#site-header {
+#site-header-nav {
 	display: grid;
 	grid: {
 		template-columns: auto 1fr auto;
@@ -49,6 +49,25 @@ body {
 		}
 		
 		width: 2.4rem;
+	}
+
+	&-menu {
+		grid-area: menu;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		background-color: $tas-colour-primary;
+		color: $tas-colour-white;
+		cursor: pointer;
+		font: {
+			family: $font-noto;
+			size: 1.2rem;
+			weight: $font-semi-bold;
+		}
+		padding-bottom: 0.2rem;
+		width: 4.8rem;
 	}
 
 	&-bar {

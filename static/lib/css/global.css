@@ -50,16 +50,16 @@ body {
   grid-template-areas: "header" "main" "footer";
 }
 
-#site-header {
+#site-header-nav {
   display: grid;
   grid-template-columns: auto 1fr auto;
   grid-template-rows: 3fr 1fr;
   grid-template-areas: "logo bar menu" "logo . .";
 }
-#site-header-logo {
+#site-header-nav-logo {
   width: 2.4rem;
 }
-#site-header-logo-wrapper {
+#site-header-nav-logo-wrapper {
   grid-area: logo;
   display: flex;
   align-items: center;
@@ -68,7 +68,21 @@ body {
   height: 4.2rem;
   width: 4.2rem;
 }
-#site-header-bar {
+#site-header-nav-menu {
+  grid-area: menu;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #231683;
+  color: #efeefc;
+  cursor: pointer;
+  font-family: "Noto Sans Thai UI", "Noto Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-bottom: 0.2rem;
+  width: 4.8rem;
+}
+#site-header-nav-bar {
   background: #050311;
   grid-area: bar;
 }

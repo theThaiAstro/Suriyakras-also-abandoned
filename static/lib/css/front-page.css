@@ -37,9 +37,5 @@ $tas-grey: hsl($tas-hsl-h, 8%, $tas-hsl-l);
 /*  END of TYPEFACE definition */
 /* URIs */
 /* END of URIs */
-header {
-  width: 100vw;
-  background: #fafafa;
-}
 
 /*# sourceMappingURL=front-page.css.map */
