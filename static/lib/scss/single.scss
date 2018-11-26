@@ -1,0 +1,8 @@
+#article-header {
+	&-img {
+		object-fit: cover;
+		max-height: 48vh;
+		height: 16rem;
+		width: 100%;
+	}
+}
