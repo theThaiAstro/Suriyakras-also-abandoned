@@ -1,8 +1,163 @@
+@import 'master';
+
 #article-header {
 	&-img {
 		object-fit: cover;
 		max-height: 48vh;
 		height: 16rem;
 		width: 100%;
+	}
+}
+
+#article-share {
+	.icon {
+		height: 1.2rem;
+		width:  1.2rem;
+		box-sizing: content-box;
+	}
+	svg {
+		// This removes the unwanted whitespace below the svg
+		vertical-align: top;
+		padding: 0.8rem;
+	}
+	#facebook {
+		fill: $brand-facebook-color;
+		&:hover {
+				fill: $tas-colour-white;
+				background: $brand-facebook-color;
+		}
+	}
+	#messenger {
+			fill: $brand-messenger-color;
+			&:hover {
+					fill: $tas-colour-white;
+					background: $brand-messenger-color;
+			}
+	}
+	#twitter {
+			fill: $brand-twitter-color;
+			&:hover {
+					fill: $tas-colour-white;
+					background: $brand-twitter-color;
+			}
+	}
+	#line {
+			fill: $brand-line-color;
+			&:hover {
+					fill: $tas-colour-white;
+					background: $brand-line-color;
+			}
+	}
+}
+
+#article-category {
+	ul {
+		// margin: 1rem 0 0 0;
+		font-family: $font-noto;
+		padding: 0;
+		
+		li {
+			display: inline-block;
+			// TODO: Check if this selector is correct (every category except the last one)
+			&:not(:last-of-type) {
+				margin-right: 0 0.4rem 0 0;
+			}
+
+			a {
+				background: $tas-colour-primary;
+				color: $tas-colour-white;
+				padding: 0.4rem 1rem;
+				text-decoration: none;
+
+				font: {
+					size: $font-size-content;
+					weight: $font-semi-bold;
+				}
+
+				&:hover {
+					background: $tas-colour-white;
+					color: $tas-colour-primary;
+				}
+			}
+		}
+	}
+}
+
+article {
+	color: $tas-colour-black;
+	font: {
+		family: $font-prajad;
+		size: $font-size-content;
+	}
+
+	// Sets the image to be 100% of the container width
+	figure {
+		margin: 0;
+		margin-top: 1;
+		width: 100%;
+
+		// TODO: Check if this helps in anything. If not remove it.
+		img {
+			// This removes the gap between <img> and <figcaption> (<img> is inline, so we have to either use display:block to fix, or vertical-align: middle
+			display: block;
+			object-fit: cover;
+			width: 100%;
+			height: auto;
+			margin: 0;
+		}
+		figcaption {
+			background: {
+				color: $tas-colour-almost-black;
+			}
+			color: $tas-colour-white;
+			font-size: $font-size-content;
+			padding: $padding-lvl-1;
+		}
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		margin-top: 2rem;
+	}
+}
+
+// TODO: Validate the tags
+#tag {
+	&-wrapper {
+		// margin-top: 2.4rem;
+		font-family: $font-noto;
+	}
+	&-list {
+		// TODO: WHY DO WE NEED MARGIN & PADDING?
+		margin: 0;
+		padding: 0;
+		li {
+			display: inline-block;
+			// Assign right margin to every tags except the last one
+			&:not(:last-of-type) {
+				margin-right: 0.4rem;
+			}
+
+			a {
+				background: #23168312;
+				border-bottom: solud $tas-colour-primary 4px;
+				color: $tas-colour-black;
+				padding: 0.4rem 0.64rem;
+				text-decoration: none;
+				
+				font: {
+					size: 1rem;
+					weight: $font-semi-bold;
+				}
+
+				&::before {
+					content: "#";
+				}
+
+				&:hover {
+					background: $tas-colour-primary;
+					color: $tas-colour-white;
+				}
+			}
+		}
 	}
 }

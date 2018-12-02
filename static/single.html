@@ -25,8 +25,15 @@
 					<img id="article-header-img" src="assets/img/foobar.jpg" />
 
 					<section id="article-metadata">
-						<section id="article-categories">
-							THIS IS THE CATEGORY
+						<section id="article-category">
+								<ul>
+									<li class="cat-item cat-item-1">
+										<a href="http://localhost/tas/suriyakras/category/uncategorised/" >Uncategorised</a>
+									</li>
+									<li class="cat-item cat-item-1">
+										<a href="http://localhost/tas/suriyakras/category/uncategorised/" >Uncategorised</a>
+									</li>
+								</ul>
 						</section>
 						<address>
 							[img] [name] 
@@ -36,18 +43,28 @@
 							[time]
 						</time>
 					</section>
-					<section id="article-share">
-						[button]
-						[button]
-						[button]
-						[button]
-					</section>
+					<aside id="article-share">
+						<svg id="facebook" class="icon">
+							<use xlink:href="./assets/icons/svg-sprites.svg#facebook" />
+						</svg>
+						<svg id="messenger" class="icon">
+							<use xlink:href="./assets/icons/svg-sprites.svg#messenger" />
+						</svg>
+						<svg id="twitter" class="icon">
+							<use xlink:href="./assets/icons/svg-sprites.svg#twitter" />
+						</svg>
+						<svg id="line" class="icon">
+							<use xlink:href="./assets/icons/svg-sprites.svg#line" />
+						</svg>
+					</aside>
 					<h1>Title of the Article</h1>
 				</header>
 				[Main content of the article]
 				<footer>
-					[tags]
-					[edited/if(any)]
+					<section id="tag-wrapper">
+						[tags]
+					</section>
+					[edited datetime/if(any)]
 				</footer>
 			</article>
 		</main>

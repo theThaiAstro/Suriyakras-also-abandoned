@@ -46,8 +46,8 @@ body {
 
 			height: 4.2rem;
 			width: 4.2rem;
-		}
-		
+			z-index: 1000;
+		}	
 		width: 2.4rem;
 	}
 
@@ -68,13 +68,14 @@ body {
 		}
 		padding-bottom: 0.2rem;
 		width: 4.8rem;
+		z-index: 1000;
 	}
 
 	&-bar {
 		background: $tas-colour-black;
 		grid-area: bar;
+		z-index: 1000;
 	}
-
 }
 
 #site-footer {

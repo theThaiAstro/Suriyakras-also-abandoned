@@ -76,6 +76,14 @@ $tas-grey: hsl($tas-hsl-h, 8%, $tas-hsl-l);
 $tas-colour-red: hsl(356, 92%, 48%);
 /* END of ACCENT COLOUR definition */
 
+/* BRAND COLOURS definition */
+$brand-facebook-color: #3b5998;
+$brand-messenger-color: #0084ff;
+$brand-line-color: #00b900;
+$brand-linkedin-color: #0077B5;
+$brand-twitter-color: #1DA1F2;
+/* END of BRAND COLOURS definition */
+
 /* END of COLOUR definition */
 
 /* -------------------------------------- */
@@ -109,8 +117,17 @@ $font-black: 900;
 
 /*  END of TYPEFACE definition */
 
+/* FONT SIZES */
+$font-size-title: 3.2rem;
+$font-size-content: 1rem;
+/* END of FONT SIZES */
+
 /* URIs */
 
 $tas-logo-path: '../../assets/img/tas-logo-200.png';
 
 /* END of URIs */
+
+/* PADDINGS */
+$padding-lvl-1: 0.8rem;
+/* END of PADDINGS */

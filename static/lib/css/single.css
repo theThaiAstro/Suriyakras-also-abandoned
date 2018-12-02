@@ -1,8 +1,171 @@
+/* RATIO definition */
+/* END of RATIO definition */
+/* COLOUR definition */
+/* 
+
+  PANTONE Reflex Blue XGC
+  rgb(34, 22, 132 )
+  #221684 
+
+*/
+/* HSL definition */
+/* OTHER COLOURS definition */
+/* 
+
+$tas-white: hsl($tas-hsl-h, $tas-hsl-s, 98%);
+$tas-almost-white-extra: hsl($tas-hsl-h, $tas-hsl-s, 94%);
+$tas-almost-white: hsl($tas-hsl-h, $tas-hsl-s, 90%); // old 92%
+$tas-blue: hsl($tas-hsl-h, $tas-hsl-s, $tas-hsl-l);
+$tas-bright-blue: hsl($tas-hsl-h, $tas-hsl-s, 64%); // 60% is also good
+$tas-almost-black: hsl($tas-hsl-h, $tas-hsl-s, 24%); // 60% is also good
+$tas-black: hsl($tas-hsl-h, $tas-hsl-s, 8%);
+$tas-super-black: hsl($tas-hsl-h, $tas-hsl-s, 4%);  
+$tas-grey: hsl($tas-hsl-h, 8%, $tas-hsl-l);
+
+*/
+/* OLD COLOURS WAITING TO REVALUE */
+/* ACCENT COLOUR definition */
+/* END of ACCENT COLOUR definition */
+/* BRAND COLOURS definition */
+/* END of BRAND COLOURS definition */
+/* END of COLOUR definition */
+/* -------------------------------------- */
+/* SHADOW definition */
+/* END of SHADOW definition */
+/* -------------------------------------- */
+/* TYPEFACE definition */
+/* FONT SIZE definition */
+/* END of SIZE definition */
+/*  END of TYPEFACE definition */
+/* FONT SIZES */
+/* END of FONT SIZES */
+/* URIs */
+/* END of URIs */
+/* PADDINGS */
+/* END of PADDINGS */
 #article-header-img {
   object-fit: cover;
   max-height: 48vh;
   height: 16rem;
   width: 100%;
+}
+
+#article-share .icon {
+  height: 1.2rem;
+  width: 1.2rem;
+  box-sizing: content-box;
+}
+#article-share svg {
+  vertical-align: top;
+  padding: 0.8rem;
+}
+#article-share #facebook {
+  fill: #3b5998;
+}
+#article-share #facebook:hover {
+  fill: #efeefc;
+  background: #3b5998;
+}
+#article-share #messenger {
+  fill: #0084ff;
+}
+#article-share #messenger:hover {
+  fill: #efeefc;
+  background: #0084ff;
+}
+#article-share #twitter {
+  fill: #1DA1F2;
+}
+#article-share #twitter:hover {
+  fill: #efeefc;
+  background: #1DA1F2;
+}
+#article-share #line {
+  fill: #00b900;
+}
+#article-share #line:hover {
+  fill: #efeefc;
+  background: #00b900;
+}
+
+#article-category ul {
+  font-family: "Noto Sans Thai UI", "Noto Sans", sans-serif;
+  padding: 0;
+}
+#article-category ul li {
+  display: inline-block;
+}
+#article-category ul li:not(:last-of-type) {
+  margin-right: 0 0.4rem 0 0;
+}
+#article-category ul li a {
+  background: #231683;
+  color: #efeefc;
+  padding: 0.4rem 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+#article-category ul li a:hover {
+  background: #efeefc;
+  color: #231683;
+}
+
+article {
+  color: #050311;
+  font-family: "Prajad", sans-serif;
+  font-size: 1rem;
+}
+article figure {
+  margin: 0;
+  margin-top: 1;
+  width: 100%;
+}
+article figure img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+article figure figcaption {
+  background-color: #090623;
+  color: #efeefc;
+  font-size: 1rem;
+  padding: 0.8rem;
+}
+article h1, article h2, article h3, article h4, article h5, article h6 {
+  margin-top: 2rem;
+}
+
+#tag-wrapper {
+  font-family: "Noto Sans Thai UI", "Noto Sans", sans-serif;
+}
+#tag-list {
+  margin: 0;
+  padding: 0;
+}
+#tag-list li {
+  display: inline-block;
+}
+#tag-list li:not(:last-of-type) {
+  margin-right: 0.4rem;
+}
+#tag-list li a {
+  background: #23168312;
+  border-bottom: solud #231683 4px;
+  color: #050311;
+  padding: 0.4rem 0.64rem;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+#tag-list li a::before {
+  content: "#";
+}
+#tag-list li a:hover {
+  background: #231683;
+  color: #efeefc;
 }
 
 /*# sourceMappingURL=single.css.map */
