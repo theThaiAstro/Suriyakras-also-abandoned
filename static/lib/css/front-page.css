@@ -43,6 +43,13 @@ $tas-grey: hsl($tas-hsl-h, 8%, $tas-hsl-l);
 /* END of URIs */
 /* PADDINGS */
 /* END of PADDINGS */
+section:not(:first-of-type) {
+  padding: 1.2rem;
+}
+section:not(:nth-of-type(2)) {
+  padding-top: 0;
+}
+
 #featured-story {
   margin-top: -1.4rem;
   width: 100%;
@@ -53,21 +60,78 @@ $tas-grey: hsl($tas-hsl-h, 8%, $tas-hsl-l);
   background-size: cover;
 }
 #featured-story-overlay {
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(to bottom, #090623 0%, rgba(35, 22, 131, 0) 64%);
-  background: rgba(8, 8, 32, 0.64);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: linear-gradient(to bottom, #090623 0%, rgba(35, 22, 131, 0) 64%);
+  background: rgba(8, 8, 32, 0.64);
   box-sizing: border-box;
-  padding: 1rem;
+  padding: 1.2rem;
+  height: 100%;
+  width: 100%;
 }
 #featured-story-title {
   color: #efeefc;
+  padding: 0;
+  margin: 0 0 1.6rem 0;
   font-family: "Noto Sans Thai UI", "Noto Sans", sans-serif;
   font-size: 3.2rem;
-  font-weight: 700;
+  font-weight: 600;
+}
+#featured-story-title span {
+  background: #eb0a19;
+  box-decoration-break: clone;
+  display: inline;
+  line-height: 1rem;
+  padding: 0.4rem 1.6rem;
+}
+
+/*
+
+Use grid
+
+Small
+
+|--------------|
+|              |
+|              |
+|              |
+|--------------|
+| SOmething 55 |
+|--------------|
+
+Large 
+
+|--------------|   TITLE OF THE ARTICLE
+|              |   
+|              |   Some excerpt of the article
+|              |   could go here....
+|--------------|
+
+*/
+.front-page-title {
+  font-family: "Noto Sans Thai UI", "Noto Sans", sans-serif;
+  font-size: 2.4rem;
+  margin-top: 0rem;
+}
+
+.section-card-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+
+.card {
+  display: grid;
+  font-family: "Noto Sans Thai UI", "Noto Sans", sans-serif;
+}
+.card h3 {
+  margin-top: 0.8rem;
+}
+.card-image {
+  object-fit: cover;
+  height: 12rem;
+  width: 100%;
 }
 
 /*# sourceMappingURL=front-page.css.map */
